@@ -1,0 +1,176 @@
+header{
+    background-color:rgb(65,94, 149);
+    height: 85px;
+    border-bottom: 1px solid;
+}
+.main-head{
+    width: 1000px;
+    padding-top:20px;
+    margin:0 auto;
+}
+body{
+    background:rgb(237, 239, 250);
+    overflow-y: scroll;
+}
+.title{
+    width: 50%;
+    float: left;
+}
+.login{
+    width:50%;
+    float:left;
+    margin-top: 20px;
+}
+/* #heading{
+    color:white;
+    font-szie:sans-serif;
+    padding-bottom: 20%;
+} */
+.email{
+    float: left;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+.password{
+    float:left;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    margin-left:18px;
+}
+.button{
+    float:left;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    margin-top:13px;
+    margin-left:18px;
+   
+}
+.password a{
+    color:#9cb4d8;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size:12px;
+    font-weight:400;
+    text-align:right;
+    margin-top:40px;
+    line-height:16.08px
+}
+.title img{
+    padding-top: 30px;
+    padding-left:170px;
+    padding-bottom: 40px;
+}
+#log{
+    height: 20px;
+    width:150px;
+}
+.login label{
+    color:white;
+}
+.button input[type="submit"]{
+    background-color: rgb(66,103,178);
+    font-weight: bold;
+    border-color:rgb(66,103,178); 
+    color:white;
+} 
+.clearfix{
+    clear: both;
+}
+.center{
+    width: 1000px;
+    margin: 0 auto;
+}
+.first{
+    margin-top: 0px;
+    float: left;
+    width: 55%;
+}
+.first p{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(34, 44, 81);    
+}
+.registr{
+    width: 45%;
+    float: left;
+}
+.second h2{
+    font-size: 40px;
+}
+.second .free{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.registr input[type="date"]{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.registr input[type="submit"]{
+    height: 30px;
+    width: 200px;
+    font-weight: solid;
+    background: rgb(101, 169, 83);
+    border: 1px solid rgb(59, 110, 34);
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.registr input[type="text"]{
+    margin-right:3px;
+    margin-bottom: 13px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    
+}
+.registr input[type="password"]{
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.registr input[type="radio"]{
+    margin-bottom: 20px;
+    margin-top: 15px;
+    border-radius: 20px;
+}
+
+.registr .emailOrNumber, .newPassword{
+    width: 84%;
+}
+.registr label{
+    font-size: 20px;
+    font-weight: medium;
+    margin-bottom: 15px;
+}
+.registr .bibip{
+    color: rgb(119, 119, 122);
+    font-size: 12px;
+}
+.registr .onlyforme{
+    color: rgb(61, 61, 41);
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.registr .emailOrNumber, .newPassword{
+    width: 84%;
+}
+#myspan{
+    color:rgb(54, 88, 153);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size:12px;
+    font-weight:400;
+    text-align:right;
+    margin-top:40px;
+    line-height:16.08px
+}
+
+.first img{
+    margin-right:100px;
+}
+
+
+
