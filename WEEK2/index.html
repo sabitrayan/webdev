@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcun icon" href="Reminder_Note-512.png">
+
+    <title> TODO list </title>
+</head>
+
+<body>
+    <header>
+        <div class="cont-header">
+            <p>TODO LIST</p>
+        </div>
+    </header>
+    <section>
+        <div class="cont-add" >
+            <form>
+                <input type="text" id="inp" placeholder="New Task" > 
+                <button type="button" id="btn" onclick="add()">Add</button>
+            </form>
+        </div>
+        <div class="cont-tasks" id="tasks">
+            <div class="task" id="tk0">
+                <form>
+                    <input type="checkbox" >
+                    <span >New Task</span>
+                    <img src="mActionDeleteSelected.png" alt="del"  onclick="del(this)">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
