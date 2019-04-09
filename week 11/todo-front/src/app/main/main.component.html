@@ -1,0 +1,30 @@
+    <header>
+        <div class="cont-header">
+            <p>TODO LIST</p>
+        </div>
+    </header>
+
+    <section>
+
+        <div class="cont-add" >
+            <h1>Task Lists</h1>
+            <span *ngFor="let c of task_lists" (click)="getTaskList(c)">Task List {{c.id}}</span>
+        </div>
+        <div class="cont-tasks" id="tasks" >
+            <h2 (click)="getTasks()">{{task_list.name}}</h2>
+            <div *ngFor="let t of tasks" >
+                <h3>{{t.name}} - {{t.created_at}} - {{t.due_on}} - {{t.status}}</h3>
+            </div>
+
+        </div>
+    </section>
+
+    
+
+
+
+
+<div>
+  <div *ngFor="let c of task_lists"> {{c.id}} - {{c.name}}</div>
+</div>
+<ng-container *ngIf="loading">Loading...</ng-container>
