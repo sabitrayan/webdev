@@ -1,0 +1,105 @@
+    <header>
+        <div class="cont-header">
+            <p>TODO LIST</p>
+
+
+            <div class="login">
+              <ng-container *ngIf="!logged">
+              <input type="text" placeholder="username" [(ngModel)]="login" >
+              <input type="password" placeholder="password" [(ngModel)]="password" >
+              <button type="button" (click)="auth()" >Login</button>
+              </ng-container>
+            </div>
+
+            <div class="logout">
+              <ng-container *ngIf="logged">
+              <button type="button" (click)="logout()" >Log Out</button>
+              </ng-container>
+            </div>
+        </div>
+
+
+
+    </header>
+
+    <section>
+      <ng-container *ngIf="logged">
+        <div class="content">
+          <div class="tls">
+
+            <h1>Task Lists</h1>
+            <div class="cont-add" >
+
+              <input type="text" class="inp" [(ngModel)]="name">
+              <button type="button" class="btn" (click)="createTaskList()" >Add</button>
+            </div>
+            <div class="tl" *ngFor="let c of tasklists" (click)="getTaskListsTasks(c)">
+              <span>{{c.name}}</span>
+            </div>
+
+          </div>
+          <div class="ts">
+
+            <h1>Tasks</h1>
+
+            <ng-container *ngIf="tasklist != null">
+
+              <input type="text" class="inptl" [(ngModel)]="tasklist.name" >
+              <button type="button" class="btndel" (click)="deleteTaskList(tasklist)" >Delete</button>
+              <button type="button" class="btnupd" (click)="updateTaskList(tasklist)" >Update</button>
+
+              <div class="t" *ngFor="let c of tasks" (click)="getTask(c)" >
+
+                <span>{{c.name}}</span>
+
+              </div>
+
+            </ng-container>
+
+          </div>
+          <div class="t-d">
+
+            <h1>Task</h1>
+
+            <ng-container *ngIf="task != null">
+
+              <input type="text" class="inpt" [(ngModel)]="task.name" >
+              <button type="button" class="btndel" (click)="deleteTask(task)" >Delete</button>
+              <button type="button" class="btnupd" (click)="updateTask(task)" >Update</button>
+
+              <div class="task-info">
+                <span>CREATED AT {{task.created_at}}</span>
+                <span>DUE ON <input type="date" [(ngModel)]="task.due_on" ></span>
+                <span>STATUS<input type="text" [(ngModel)]="task.status"></span>
+              </div>
+
+
+            </ng-container>
+            <ng-container *ngIf="tasklist != null">
+              <div class="task-create">
+                <h2>Creating new task</h2>
+                <span><input type="text" placeholder="New Name" [(ngModel)]="newtask.name">NAME</span>
+                <span><input type="date" [(ngModel)]="newtask.due_on">DUE ON</span>
+                <span><input type="text" placeholder="status" [(ngModel)]="newtask.status">STATUS</span>
+                <button class="btn-create"(click)="createTask()">Create</button>
+              </div>
+            </ng-container>
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+      </ng-container>
+
+
+    </section>
+
+
+
+
+
